@@ -1,5 +1,5 @@
 import pymysql
-from gather_articles import *
+from Aritcle_Crawler.Gather_data.gather_techcruch import *
 
 def drop_tables(table_name, db) :
 
@@ -14,7 +14,7 @@ def drop_tables(table_name, db) :
 
 
 if __name__ == '__main__':
-    article_df, author_df = get_articles()
+    article_df, author_df = get_articles(10000)
 
 
     val = input("Enter Password: ")
