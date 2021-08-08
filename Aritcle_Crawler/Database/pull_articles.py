@@ -9,3 +9,4 @@ if __name__ == '__main__':
 
     sql = "SELECT * FROM articles"
     result = pd.read_sql(sql, db)
+
